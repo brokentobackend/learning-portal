@@ -1,0 +1,666 @@
+<h3>1. List and explain the secure communication protocols. Describe briefly about a firewall and its role in network security.</h3>
+
+    <h4>Secure Communication Protocols</h4>
+    <p>Secure communication protocols ensure confidentiality, integrity, authentication, and secure data transfer over networks.</p>
+
+    <ol>
+        <li><strong>SSL (Secure Sockets Layer)</strong><br>Encrypts data between client and server. Mostly replaced by TLS.</li>
+        <li><strong>TLS (Transport Layer Security)</strong><br>Advanced and more secure version of SSL. Used in HTTPS, email, and messaging.</li>
+        <li><strong>HTTPS (HTTP Secure)</strong><br>Secure version of HTTP using SSL/TLS for encrypted web communication.</li>
+        <li><strong>SSH (Secure Shell)</strong><br>Provides secure remote login and command execution.</li>
+        <li><strong>IPsec (Internet Protocol Security)</strong><br>Secures IP communication using encryption and authentication.</li>
+        <li><strong>SFTP (Secure File Transfer Protocol)</strong><br>Secure file transfer using SSH.</li>
+    </ol>
+
+    <h4>Firewall and Its Role in Network Security</h4>
+    <p>A firewall is a security device or software that monitors and controls incoming and outgoing network traffic based on predefined security rules.</p>
+
+    <h4>Role of Firewall</h4>
+    <ul>
+        <li>Blocks unauthorized access</li>
+        <li>Prevents malicious traffic</li>
+        <li>Enforces security policies</li>
+        <li>Acts as a barrier between trusted and untrusted networks</li>
+    </ul>
+
+    <h3>2. Distinguish between Static Packet Filtering and Dynamic Packet Filtering. Distinguish between Encryption and Authentication within network security protocols.</h3>
+
+    <h4>Static Packet Filtering vs Dynamic Packet Filtering</h4>
+
+    <table style="width:100%; border-collapse:collapse; margin:20px 0;">
+        <thead>
+            <tr style="background-color:#f3f4f6;">
+                <th style="border:1px solid #e5e7eb; padding:12px;">Aspect</th>
+                <th style="border:1px solid #e5e7eb; padding:12px;">Static Packet Filtering</th>
+                <th style="border:1px solid #e5e7eb; padding:12px;">Dynamic Packet Filtering</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Rule Type</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Fixed rules</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Adaptive rules</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">State Awareness</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Stateless</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Stateful</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Flexibility</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Low</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">High</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Security Level</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Basic</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Advanced</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Example</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Basic firewall</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Stateful firewall</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4>Encryption vs Authentication</h4>
+
+    <table style="width:100%; border-collapse:collapse; margin:20px 0;">
+        <thead>
+            <tr style="background-color:#f3f4f6;">
+                <th style="border:1px solid #e5e7eb; padding:12px;">Aspect</th>
+                <th style="border:1px solid #e5e7eb; padding:12px;">Encryption</th>
+                <th style="border:1px solid #e5e7eb; padding:12px;">Authentication</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Purpose</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Protect data confidentiality</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Verify identity</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Focus</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Data security</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">User/system identity</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Technique</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Cryptographic algorithms</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Credentials, certificates</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Example</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">AES, RSA</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Passwords, digital certificates</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>3. Discuss the working of SSL and TLS. Compare between Next-Generation Firewall and Traditional Firewall.</h3>
+
+    <h4>Working of SSL and TLS</h4>
+    <ul>
+        <li>SSL/TLS uses encryption, authentication, and integrity checks</li>
+        <li>Establishes a secure handshake between client and server</li>
+        <li>Uses asymmetric encryption for key exchange</li>
+        <li>Uses symmetric encryption for data transfer</li>
+        <li>Ensures secure communication over the Internet</li>
+    </ul>
+
+    <h4>Next-Generation Firewall vs Traditional Firewall</h4>
+
+    <table style="width:100%; border-collapse:collapse; margin:20px 0;">
+        <thead>
+            <tr style="background-color:#f3f4f6;">
+                <th style="border:1px solid #e5e7eb; padding:12px;">Aspect</th>
+                <th style="border:1px solid #e5e7eb; padding:12px;">Traditional Firewall</th>
+                <th style="border:1px solid #e5e7eb; padding:12px;">Next-Generation Firewall</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Filtering</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Packet-based</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Application-aware</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Threat Detection</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Limited</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Advanced (IDS/IPS)</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Security Level</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Basic</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">High</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Malware Protection</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">No</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Yes</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Traffic Inspection</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Shallow</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Deep Packet Inspection</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>4. Distinguish between VPN and Secure Tunneling concepts. Describe the types of packet filtering techniques used in network security.</h3>
+
+    <h4>VPN vs Secure Tunneling</h4>
+
+    <table style="width:100%; border-collapse:collapse; margin:20px 0;">
+        <thead>
+            <tr style="background-color:#f3f4f6;">
+                <th style="border:1px solid #e5e7eb; padding:12px;">Aspect</th>
+                <th style="border:1px solid #e5e7eb; padding:12px;">VPN</th>
+                <th style="border:1px solid #e5e7eb; padding:12px;">Secure Tunneling</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Purpose</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Secure remote access</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Secure data path</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Encryption</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Yes</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Yes</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Scope</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Network-level</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Protocol-level</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Examples</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">IPsec VPN, SSL VPN</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">SSH tunnel, SSL tunnel</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4>Types of Packet Filtering Techniques</h4>
+    <ol>
+        <li><strong>Stateless Packet Filtering</strong><br>Filters packets based on IP address and port number.</li>
+        <li><strong>Stateful Packet Filtering</strong><br>Tracks active connections and packet states.</li>
+        <li><strong>Application-Level Filtering</strong><br>Inspects application data.</li>
+        <li><strong>Deep Packet Inspection (DPI)</strong><br>Examines packet content for threats.</li>
+    </ol>
+
+    <h3>5. Explain the function of cryptography in network security. Describe the types of firewalls and explain their functions.</h3>
+
+    <h4>Function of Cryptography in Network Security</h4>
+    <p>Cryptography protects data by converting it into an unreadable form.</p>
+
+    <h4>Functions</h4>
+    <ul>
+        <li>Confidentiality through encryption</li>
+        <li>Integrity using hashing</li>
+        <li>Authentication using keys and certificates</li>
+        <li>Non-repudiation using digital signatures</li>
+    </ul>
+
+    <h4>Types of Firewalls and Their Functions</h4>
+    <ol>
+        <li><strong>Packet Filtering Firewall</strong><br>Filters packets based on rules.</li>
+        <li><strong>Stateful Inspection Firewall</strong><br>Tracks session states for better security.</li>
+        <li><strong>Proxy Firewall</strong><br>Acts as an intermediary between users and the Internet.</li>
+        <li><strong>Next-Generation Firewall (NGFW)</strong><br>Provides application control, IDS/IPS, and malware protection.</li>
+        <li><strong>Software Firewall</strong><br>Installed on individual systems.</li>
+    </ol>
+
+    <h3>6. Write a brief note on Intrusion Prevention System (IPS). Explain the benefits and limitations of the stateful inspection technique in network security.</h3>
+
+    <h4>Intrusion Prevention System (IPS)</h4>
+    <p>An Intrusion Prevention System (IPS) is a network security device or software that monitors network traffic in real time, detects malicious activities, and actively blocks or prevents attacks.</p>
+
+    <h4>Functions of IPS</h4>
+    <ul>
+        <li>Inspects incoming and outgoing traffic</li>
+        <li>Detects known attacks using signatures and patterns</li>
+        <li>Prevents intrusions by dropping malicious packets</li>
+        <li>Protects against malware, DoS attacks, and exploits</li>
+    </ul>
+    <p><strong>Importance:</strong><br>IPS provides active protection by stopping threats before they reach critical systems.</p>
+
+    <h4>Stateful Inspection Technique</h4>
+    <p>Stateful inspection is a firewall technique that tracks the state of active network connections and makes filtering decisions based on context.</p>
+
+    <h4>Benefits</h4>
+    <ul>
+        <li>More secure than stateless filtering</li>
+        <li>Understands session state</li>
+        <li>Blocks unsolicited traffic</li>
+        <li>Improves protection against spoofing</li>
+    </ul>
+
+    <h4>Limitations</h4>
+    <ul>
+        <li>Requires more memory and processing power</li>
+        <li>Less effective against application-layer attacks</li>
+        <li>Performance may degrade under heavy traffic</li>
+    </ul>
+
+    <h3>7. Explain IPsec (Internet Protocol Security) and its working in securing network communications.</h3>
+
+    <h4>IPsec (Internet Protocol Security)</h4>
+    <p>IPsec (Internet Protocol Security) is a suite of protocols used to secure IP communication by providing encryption, authentication, and integrity at the network layer.</p>
+
+    <h4>Services Provided by IPsec</h4>
+    <ul>
+        <li>Confidentiality</li>
+        <li>Integrity</li>
+        <li>Authentication</li>
+        <li>Anti-replay protection</li>
+    </ul>
+
+    <h4>Working of IPsec</h4>
+    <ol>
+        <li>IPsec establishes a Security Association (SA) between two devices</li>
+        <li>Key exchange is performed using IKE (Internet Key Exchange)</li>
+        <li>Data packets are encrypted and authenticated</li>
+        <li>Secure communication is achieved using:
+            <ul>
+                <li>AH (Authentication Header) – integrity and authentication</li>
+                <li>ESP (Encapsulating Security Payload) – encryption and integrity</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h4>Modes of Operation</h4>
+    <ul>
+        <li><strong>Transport Mode</strong> – protects payload only</li>
+        <li><strong>Tunnel Mode</strong> – protects entire IP packet (used in VPNs)</li>
+    </ul>
+
+    <h3>8. Discuss the functions of a firewall in network security.</h3>
+
+    <h4>Functions of a Firewall</h4>
+    <p>A firewall is a security mechanism that controls network traffic between trusted and untrusted networks.</p>
+    <ol>
+        <li><strong>Access Control</strong><br>Allows or blocks traffic based on rules.</li>
+        <li><strong>Traffic Monitoring</strong><br>Inspects incoming and outgoing packets.</li>
+        <li><strong>Threat Prevention</strong><br>Blocks malicious and unauthorized traffic.</li>
+        <li><strong>Network Segmentation</strong><br>Separates internal networks for security.</li>
+        <li><strong>Logging and Auditing</strong><br>Maintains records of network activity.</li>
+        <li><strong>Policy Enforcement</strong><br>Enforces organizational security policies.</li>
+    </ol>
+
+    <h3>7. Compare a Firewall and IPS based on how they detect, prevent, and respond to network threats. Differentiate between Intrusion Detection System (IDS) and Intrusion Prevention System (IPS).</h3>
+
+    <h4>Firewall vs IPS</h4>
+
+    <table style="width:100%; border-collapse:collapse; margin:20px 0;">
+        <thead>
+            <tr style="background-color:#f3f4f6;">
+                <th style="border:1px solid #e5e7eb; padding:12px;">Aspect</th>
+                <th style="border:1px solid #e5e7eb; padding:12px;">Firewall</th>
+                <th style="border:1px solid #e5e7eb; padding:12px;">IPS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Detection</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Based on rules</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Signature and behavior-based</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Prevention</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Blocks unauthorized traffic</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Actively blocks attacks</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Response</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Passive</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Active</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Focus</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Access control</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Attack prevention</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4>IDS vs IPS</h4>
+
+    <table style="width:100%; border-collapse:collapse; margin:20px 0;">
+        <thead>
+            <tr style="background-color:#f3f4f6;">
+                <th style="border:1px solid #e5e7eb; padding:12px;">Aspect</th>
+                <th style="border:1px solid #e5e7eb; padding:12px;">IDS</th>
+                <th style="border:1px solid #e5e7eb; padding:12px;">IPS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Action</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Detects threats</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Detects and blocks threats</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Mode</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Passive</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Active</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Response</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Alerts administrators</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Drops packets automatically</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Deployment</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Monitoring</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Inline security</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>10. Explain the key features of the IPsec (Internet Protocol Security) protocol. Discuss the reasons for using firewalls in network security.</h3>
+
+    <h4>Key Features of IPsec</h4>
+    <ol>
+        <li><strong>Confidentiality</strong> – Encrypts data</li>
+        <li><strong>Integrity</strong> – Prevents data modification</li>
+        <li><strong>Authentication</strong> – Verifies sender identity</li>
+        <li><strong>Anti-Replay Protection</strong> – Prevents replay attacks</li>
+        <li><strong>Flexible Modes</strong> – Transport and Tunnel modes</li>
+        <li><strong>VPN Support</strong> – Secure site-to-site and remote access</li>
+    </ol>
+
+    <h4>Reasons for Using Firewalls</h4>
+    <ul>
+        <li>Protect internal networks from external threats</li>
+        <li>Prevent unauthorized access</li>
+        <li>Control traffic flow</li>
+        <li>Enforce security policies</li>
+        <li>Reduce attack surface</li>
+        <li>Improve overall network security</li>
+    </ul>
+
+    <h3>11. Distinguish between WPA2 and WPA3 in terms of security improvements. Describe how stateful inspection works in network security.</h3>
+
+    <h4>Difference between WPA2 and WPA3</h4>
+
+    <table style="width:100%; border-collapse:collapse; margin:20px 0;">
+        <thead>
+            <tr style="background-color:#f3f4f6;">
+                <th style="border:1px solid #e5e7eb; padding:12px;">Aspect</th>
+                <th style="border:1px solid #e5e7eb; padding:12px;">WPA2</th>
+                <th style="border:1px solid #e5e7eb; padding:12px;">WPA3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Encryption</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">AES-CCMP</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Stronger encryption with AES-GCMP</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Authentication</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">PSK (Pre-Shared Key)</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">SAE (Simultaneous Authentication of Equals)</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Protection Against Attacks</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Vulnerable to brute-force attacks</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Strong resistance to brute-force attacks</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Forward Secrecy</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Not supported</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Supported</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Security Level</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Good</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Very high</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p><strong>Conclusion:</strong><br>WPA3 provides enhanced encryption, stronger authentication, and better protection against modern wireless attacks compared to WPA2.</p>
+
+    <h4>Stateful Inspection in Network Security</h4>
+    <p>Stateful inspection is a firewall technique that tracks the state of active connections and allows or blocks traffic based on the context of the session.</p>
+
+    <h4>Working</h4>
+    <ul>
+        <li>Firewall maintains a state table</li>
+        <li>Monitors connection status (new, established, terminated)</li>
+        <li>Allows only packets that belong to valid sessions</li>
+        <li>Blocks unsolicited or suspicious traffic</li>
+    </ul>
+    <p><strong>Benefit:</strong><br>Provides better security than simple packet filtering.</p>
+
+    <h3>12. Differentiate between IPsec and SSL in terms of network security. Analyze the advantages and disadvantages of using a firewall in network security.</h3>
+
+    <h4>IPsec vs SSL</h4>
+
+    <table style="width:100%; border-collapse:collapse; margin:20px 0;">
+        <thead>
+            <tr style="background-color:#f3f4f6;">
+                <th style="border:1px solid #e5e7eb; padding:12px;">Aspect</th>
+                <th style="border:1px solid #e5e7eb; padding:12px;">IPsec</th>
+                <th style="border:1px solid #e5e7eb; padding:12px;">SSL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">OSI Layer</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Network Layer</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Transport/Application Layer</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Scope</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Secures entire network</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Secures specific applications</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Use Case</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">VPNs, site-to-site security</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Web and application security</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Encryption</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">End-to-end</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Session-based</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Complexity</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">High</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Moderate</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4>Advantages of Firewalls</h4>
+    <ul>
+        <li>Blocks unauthorized access</li>
+        <li>Enforces security policies</li>
+        <li>Protects internal networks</li>
+        <li>Reduces attack surface</li>
+    </ul>
+
+    <h4>Disadvantages of Firewalls</h4>
+    <ul>
+        <li>Cannot stop internal attacks completely</li>
+        <li>Limited against application-layer attacks</li>
+        <li>Performance overhead</li>
+        <li>Requires proper configuration</li>
+    </ul>
+
+    <h3>13. Distinguish between WPA and WPA2 based on encryption standards and capabilities. Describe how IDS and IPS monitor, detect, and respond to network threats.</h3>
+
+    <h4>WPA vs WPA2</h4>
+
+    <table style="width:100%; border-collapse:collapse; margin:20px 0;">
+        <thead>
+            <tr style="background-color:#f3f4f6;">
+                <th style="border:1px solid #e5e7eb; padding:12px;">Aspect</th>
+                <th style="border:1px solid #e5e7eb; padding:12px;">WPA</th>
+                <th style="border:1px solid #e5e7eb; padding:12px;">WPA2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Encryption</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">TKIP</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">AES-CCMP</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Security</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Moderate</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Strong</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Vulnerability</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">More vulnerable</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">More secure</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Performance</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Lower</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Higher</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4>IDS and IPS Working</h4>
+
+    <h4>IDS (Intrusion Detection System)</h4>
+    <ul>
+        <li>Monitors network traffic</li>
+        <li>Detects suspicious activity</li>
+        <li>Generates alerts</li>
+        <li>Passive response</li>
+    </ul>
+
+    <h4>IPS (Intrusion Prevention System)</h4>
+    <ul>
+        <li>Monitors traffic in real time</li>
+        <li>Detects and blocks threats</li>
+        <li>Drops malicious packets</li>
+        <li>Active response</li>
+    </ul>
+
+    <h3>14. Describe wireless security protocols and explain any two of them. Explain the technique of configuring a firewall in a network.</h3>
+
+    <h4>Wireless Security Protocols</h4>
+    <p>Wireless security protocols protect Wi-Fi networks from unauthorized access.</p>
+    <p><strong>Examples:</strong></p>
+    <ul>
+        <li>WEP</li>
+        <li>WPA</li>
+        <li>WPA2</li>
+        <li>WPA3</li>
+    </ul>
+
+    <h4>Explanation of Any Two Protocols</h4>
+
+    <h4>WPA2</h4>
+    <ul>
+        <li>Uses AES encryption</li>
+        <li>Provides strong data protection</li>
+        <li>Widely used in secure networks</li>
+    </ul>
+
+    <h4>WPA3</h4>
+    <ul>
+        <li>Uses SAE authentication</li>
+        <li>Provides forward secrecy</li>
+        <li>Protects against brute-force attacks</li>
+    </ul>
+
+    <h4>Firewall Configuration Technique</h4>
+    <ol>
+        <li>Define security policies</li>
+        <li>Set inbound and outbound rules</li>
+        <li>Allow trusted traffic</li>
+        <li>Block unauthorized access</li>
+        <li>Enable logging and monitoring</li>
+        <li>Regularly update firewall rules</li>
+    </ol>
+
+    <h3>15. Distinguish between a Firewall and an Intrusion Detection System (IDS) based on purpose and functionality. What is an IDPS? Describe how it detects and prevents network intrusions.</h3>
+
+    <h4>Firewall vs IDS</h4>
+
+    <table style="width:100%; border-collapse:collapse; margin:20px 0;">
+        <thead>
+            <tr style="background-color:#f3f4f6;">
+                <th style="border:1px solid #e5e7eb; padding:12px;">Aspect</th>
+                <th style="border:1px solid #e5e7eb; padding:12px;">Firewall</th>
+                <th style="border:1px solid #e5e7eb; padding:12px;">IDS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Purpose</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Prevent unauthorized access</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Detect intrusions</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Action</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Blocks traffic</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Alerts administrator</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Nature</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Preventive</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Detective</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Response</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Active</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Passive</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4>IDPS (Intrusion Detection and Prevention System)</h4>
+    <p>An IDPS combines IDS and IPS features to detect and prevent intrusions.</p>
+
+    <h4>Detection Methods</h4>
+    <ul>
+        <li>Signature-based</li>
+        <li>Anomaly-based</li>
+        <li>Policy-based</li>
+    </ul>
+
+    <h4>Prevention Actions</h4>
+    <ul>
+        <li>Blocks malicious traffic</li>
+        <li>Terminates connections</li>
+        <li>Updates security rules</li>
+    </ul>
+
+    <h3>16. What are VPN and secure tunneling? Explain briefly. Explain the operation of a VPN and how it ensures secure communication over the Internet.</h3>
+
+    <h4>VPN (Virtual Private Network)</h4>
+    <p>A VPN creates a secure encrypted connection over a public network, allowing private communication.</p>
+
+    <h4>Secure Tunneling</h4>
+    <p>Secure tunneling encapsulates data packets within encrypted tunnels to protect them from interception.</p>
+
+    <h4>Operation of a VPN</h4>
+    <ol>
+        <li>User initiates VPN connection</li>
+        <li>Authentication is performed</li>
+        <li>Encrypted tunnel is established</li>
+        <li>Data is encrypted before transmission</li>
+        <li>Secure data transfer occurs over the Internet</li>
+    </ol>
+
+    <h4>How VPN Ensures Security</h4>
+    <ul>
+        <li>Encrypts data</li>
+        <li>Hides IP address</li>
+        <li>Prevents eavesdropping</li>
+        <li>Ensures confidentiality and integrity</li>
+    </ul>

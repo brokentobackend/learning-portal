@@ -1,0 +1,892 @@
+<h3>
+    16. Discuss IP addressing, including its types, and explain why it is important in networking. How do RIP and BGP differ in routing networks?
+  </h3>
+
+<p><b>IP Addressing</b><p>
+<p>
+  IP addressing is a logical addressing system used to uniquely identify devices on a network. 
+  It enables devices to locate and communicate with each other across local and global networks.
+</p>
+<h4>Types of IP Addressing</h4>
+<ul>
+  <li><strong>IPv4</strong> – 32-bit address written in dotted decimal format (e.g., 192.168.1.1)</li>
+  <li><strong>IPv6</strong> – 128-bit address written in hexadecimal format</li>
+  <li><strong>Public IP</strong> – Globally unique, used on the Internet</li>
+  <li><strong>Private IP</strong> – Used within local networks</li>
+</ul>
+<p><b>Importance of IP Addressing</b></p>
+<ul>
+  <li>Uniquely identifies each device</li>
+  <li>Enables correct data delivery</li>
+  <li>Supports routing and scalability</li>
+</ul>
+<h4><b>Difference between RIP and BGP</b></h4>
+<table style="width:100%; border-collapse:collapse; margin:20px 0;">
+  <thead>
+    <tr style="background-color:#f3f4f6;">
+      <th style="border:1px solid #e5e7eb; padding:12px;">RIP</th>
+      <th style="border:1px solid #e5e7eb; padding:12px;">BGP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border:1px solid #e5e7eb; padding:12px;">Distance vector protocol</td>
+      <td style="border:1px solid #e5e7eb; padding:12px;">Path vector protocol</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #e5e7eb; padding:12px;">Uses hop count</td>
+      <td style="border:1px solid #e5e7eb; padding:12px;">Uses AS path and policies</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #e5e7eb; padding:12px;">Used in small networks</td>
+      <td style="border:1px solid #e5e7eb; padding:12px;">Used on Internet backbone</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>
+    17. Distinguish TCP and UDP in terms of reliability, overhead, and application scenarios. List the applications of Web Services and briefly explain their use in real-world scenarios.
+</h3>
+<p><b>TCP vs UDP</b></p>
+<table style="width:100%; border-collapse:collapse; margin:20px 0;">
+  <thead>
+    <tr style="background-color:#f3f4f6;">
+      <th style="border:1px solid #e5e7eb; padding:12px;">TCP</th>
+      <th style="border:1px solid #e5e7eb; padding:12px;">UDP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border:1px solid #e5e7eb; padding:12px;">Reliable and connection-oriented</td>
+      <td style="border:1px solid #e5e7eb; padding:12px;">Unreliable and connectionless</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #e5e7eb; padding:12px;">High overhead</td>
+      <td style="border:1px solid #e5e7eb; padding:12px;">Low overhead</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #e5e7eb; padding:12px;">Used for email, file transfer, web</td>
+      <td style="border:1px solid #e5e7eb; padding:12px;">Used for video streaming, gaming</td>
+    </tr>
+  </tbody>
+</table>
+<p><b>Applications of Web Services</b></p>
+<ul>
+  <li><strong>E-commerce</strong> – Online payments and order processing</li>
+  <li><strong>Banking</strong> – Fund transfer and account management</li>
+  <li><strong>Social Media</strong> – Login authentication and data sharing</li>
+  <li><strong>Healthcare</strong> – Patient record management</li>
+</ul>
+
+  <h3>
+    18. Describe IP address classes and explain how subnetting is used to divide networks. Describe the key functions of the Transport layer in the OSI model.
+  </h3>
+
+<p><b>IP Address Classes</b></p>
+
+<p>In IPv4, IP addresses are divided into classes based on the size of the network and number of hosts supported.</p>
+<table style="width:100%; border-collapse:collapse; margin:20px 0;">
+  <thead>
+    <tr style="background-color:#f3f4f6;">
+      <th style="border:1px solid #e5e7eb; padding:12px;">Class</th>
+      <th style="border:1px solid #e5e7eb; padding:12px;">Range</th>
+      <th style="border:1px solid #e5e7eb; padding:12px;">Usage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border:1px solid #e5e7eb; padding:12px;">Class A</td>
+      <td style="border:1px solid #e5e7eb; padding:12px;">1.0.0.0 – 126.255.255.255</td>
+      <td style="border:1px solid #e5e7eb; padding:12px;">Large networks</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #e5e7eb; padding:12px;">Class B</td>
+      <td style="border:1px solid #e5e7eb; padding:12px;">128.0.0.0 – 191.255.255.255</td>
+      <td style="border:1px solid #e5e7eb; padding:12px;">Medium networks</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #e5e7eb; padding:12px;">Class C</td>
+      <td style="border:1px solid #e5e7eb; padding:12px;">192.0.0.0 – 223.255.255.255</td>
+      <td style="border:1px solid #e5e7eb; padding:12px;">Small networks</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #e5e7eb; padding:12px;">Class D</td>
+      <td style="border:1px solid #e5e7eb; padding:12px;">224.0.0.0 – 239.255.255.255</td>
+      <td style="border:1px solid #e5e7eb; padding:12px;">Multicasting</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #e5e7eb; padding:12px;">Class E</td>
+      <td style="border:1px solid #e5e7eb; padding:12px;">240.0.0.0 – 255.255.255.255</td>
+      <td style="border:1px solid #e5e7eb; padding:12px;">Experimental</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><b>Subnetting</b></p>
+<p>
+  Subnetting is the process of dividing a large network into smaller logical networks (subnets) by borrowing bits from the host portion of an IP address.
+</p>
+
+<p><b>Purpose of Subnetting</b></p>
+<ul>
+    <li>Efficient utilization of IP addresses</li>
+
+<li>Reduced network congestion</li>
+
+<li>Improved security and management</li>
+
+<li>Better network performance</li>
+</ul>
+<p><b>How Subnetting Works</b></p>
+<ul>
+    <li>A subnet mask is used to separate network and host portions</li>
+
+<ul>Example:
+
+<li>Class C default mask: 255.255.255.0</li>
+
+<li>After subnetting: 255.255.255.192</li>
+</ul>   
+
+<li>This creates multiple smaller networks within a single IP class</li>
+</ul>
+
+<p><b>Functions of Transport Layer</b></p>
+<ol>
+  <li><b>Segmentation and reassembly</b>
+    <p>Breaks data into segments and reassembles them at the destination.</p>
+  </li>
+  <li><b>Flow control</b>
+    <p>Controls data transmission speed to prevent receiver overload.</p>
+  </li>
+  <li><b>Error control</b>
+    <p>Detects and retransmits lost or corrupted data.</p>
+  </li>
+  <li><b>Reliable data delivery</b>
+    <p>Ensures reliable data delivery using acknowledgements and sequencing.</p>
+  </li>
+  <li><b>Port addressing</b>
+    <p>Uses port numbers to deliver data to the correct application.</p>
+  </li>
+</ol>
+
+<h3>
+    19. Interpret how OSPF uses Dijkstra’s algorithm for routing. What is DNS? Describe how it works.
+</h3>
+<p><b>OSPF and Dijkstra’s Algorithm</b></p>
+<p>
+  OSPF is a link-state routing protocol that uses Dijkstra’s Shortest Path First algorithm.
+  Routers build a complete topology map and compute the shortest path based on cost.
+</p>
+<p><b>How OSPF Uses Dijkstra’s Algorithm</b></p>
+<ul>
+    <li>Each router using OSPF collects information about its directly connected links.</li>
+    <li>Routers exchange this information using Link State Advertisements (LSAs).</li>
+    <li>All routers build an identical Link State Database (LSDB) representing the network topology.</li>
+    <li>OSPF then applies Dijkstra’s Shortest Path First (SPF) algorithm on the LSDB.</li>
+    <li>The algorithm calculates the shortest path based on cost (metric) from the router to every other network.</li>
+    <li>The best paths are stored in the routing table and used for packet forwarding.</li>
+</ul>
+<p><b>DNS (Domain Name System)</b></p>
+<p>
+  DNS translates human-readable domain names into IP addresses, allowing users to access websites easily.
+</p>
+<span><b>Example:</b>
+www.google.com → 142.250.190.14
+
+<p>Without DNS, users would need to remember IP addresses instead of domain names.</p></span>
+<p><b>Working of DNS</b></p>
+
+<ul>
+    <li>The user enters a domain name in a web browser.</li>
+    <li>The request is sent to a DNS resolver (usually provided by the ISP).</li>
+    <li>If the resolver does not know the answer, it queries:
+        <ul>
+            <li>Root DNS server</li>
+            <li>Top-Level Domain (TLD) server (e.g., .com, .org)</li>
+            <li>Authoritative DNS server</li>
+        </ul>
+    </li>
+    <li>The authoritative server returns the corresponding IP address.</li>
+    <li>The resolver sends the IP address back to the user’s device.</li>
+    <li>The browser connects to the destination server using that IP address.</li>
+</ul>
+
+  <h3>
+    20. Explain what a router is and describe its various types with their functions. Identify the roles of a network switch and describe its typical features.
+  </h3>
+
+
+<p><b>Router</b></p>
+<p>
+  AA router is a networking device that connects two or more different networks and forwards data packets based on IP addresses. It operates at the Network Layer (Layer 3) of the OSI model and determines the best path for data using routing tables and routing protocols. router is a network layer device that connects different networks and forwards packets based on IP addresses.
+</p>
+
+<p><b>Types of Routers</b></p>
+<ol>
+    <li>
+        <strong>Core Router</strong>
+        <ul>
+            <li>Used in the backbone of large networks and ISPs</li>
+            <li>Handles high-speed data transmission between major networks</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Edge Router</strong>
+        <ul>
+            <li>Connects internal networks to external networks such as the Internet</li>
+            <li>Performs filtering, security, and routing between networks</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Wireless Router</strong>
+        <ul>
+            <li>Provides both routing and wireless access</li>
+            <li>Commonly used in homes and small offices</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Virtual Router</strong>
+        <ul>
+            <li>Software-based router running on virtual machines</li>
+            <li>Used in cloud and virtualized environments</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Enterprise Router</strong>
+        <ul>
+            <li>Designed for large organizations</li>
+            <li>Supports advanced security, load balancing, and traffic management</li>
+        </ul>
+    </li>
+</ol>
+
+<p><b>Network Switch</b></p>
+<p>
+A network switch is a device that connects multiple devices within the same local network (LAN) and forwards data based on MAC addresses. It operates at the Data Link Layer (Layer 2) of the OSI model (some switches also operate at Layer 3).</p>
+
+<p><b>Features of Network Switch</b></p>
+<ol>
+    <li>
+        <strong>Core Router</strong>
+        <ul>
+            <li>Used in the backbone of large networks and ISPs</li>
+            <li>Handles high-speed data transmission between major networks</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Edge Router</strong>
+        <ul>
+            <li>Connects internal networks to external networks such as the Internet</li>
+            <li>Performs filtering, security, and routing between networks</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Wireless Router</strong>
+        <ul>
+            <li>Provides both routing and wireless access</li>
+            <li>Commonly used in homes and small offices</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Virtual Router</strong>
+        <ul>
+            <li>Software-based router running on virtual machines</li>
+            <li>Used in cloud and virtualized environments</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Enterprise Router</strong>
+        <ul>
+            <li>Designed for large organizations</li>
+            <li>Supports advanced security, load balancing, and traffic management</li>
+        </ul>
+    </li>
+</ol>
+
+
+<h3>21. Write a brief note on the SMTP protocol. Differentiate between client–server and peer-to-peer (P2P) network architectures.</h3>
+
+    <h4>SMTP (Simple Mail Transfer Protocol)</h4>
+    <p>
+        <b>SMTP (Simple Mail Transfer Protocol) is an application layer protocol used to send and relay email messages from a sender to a receiver over a network.</b>
+    </p>
+
+    <h4>Brief Note on SMTP</h4>
+    <ul>
+        <li>SMTP is mainly used for sending emails, not receiving them.</li>
+        <li>It works on a client–server model, where the sender’s mail server sends messages to the receiver’s mail server.</li>
+        <li>SMTP uses TCP to ensure reliable delivery of email messages.</li>
+        <li>Commonly uses port 25 (and ports 587 or 465 for secure transmission).</li>
+        <li>It transfers emails in text format and works with other protocols like POP3 or IMAP for receiving emails.</li>
+    </ul>
+
+    <div class="example">
+        <strong>Example:</strong><br>
+        When you send an email from Gmail, SMTP transfers the message from Gmail’s server to the recipient’s mail server.
+    </div>
+
+    <h4>Difference Between Client–Server and Peer-to-Peer (P2P) Network Architectures</h4>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Aspect</th>
+                <th>Client–Server Architecture</th>
+                <th>Peer-to-Peer (P2P) Architecture</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Definition</strong></td>
+                <td>A central server provides services to multiple clients</td>
+                <td>All nodes act as both client and server</td>
+            </tr>
+            <tr>
+                <td><strong>Control</strong></td>
+                <td>Centralized control by server</td>
+                <td>No central control</td>
+            </tr>
+            <tr>
+                <td><strong>Resource Sharing</strong></td>
+                <td>Resources are stored and managed by the server</td>
+                <td>Resources are shared directly among peers</td>
+            </tr>
+            <tr>
+                <td><strong>Security</strong></td>
+                <td>High security due to centralized management</td>
+                <td>Lower security</td>
+            </tr>
+            <tr>
+                <td><strong>Scalability</strong></td>
+                <td>Limited scalability</td>
+                <td>Highly scalable</td>
+            </tr>
+            <tr>
+                <td><strong>Cost</strong></td>
+                <td>Expensive due to dedicated server</td>
+                <td>Low cost</td>
+            </tr>
+            <tr>
+                <td><strong>Examples</strong></td>
+                <td>Web servers, Email servers, Banking systems</td>
+                <td>File sharing systems, Torrent networks</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>22. Describe a network switch and its characteristics. Explain the functions of the Transport layer and describe its key characteristics.</h3>
+
+    <h4>Network Switch</h4>
+    <p>A network switch is a networking device used to connect multiple devices within a Local Area Network (LAN) and forward data frames to the correct destination using MAC addresses. It operates mainly at the Data Link Layer (Layer 2) of the OSI model (some switches also operate at Layer 3).</p>
+
+    <h4>Characteristics of a Network Switch</h4>
+    <ol>
+        <li><strong>MAC Address-Based Forwarding</strong><br>Uses a MAC address table to send data only to the intended device.</li>
+        <li><strong>Multiple Ports</strong><br>Allows many devices such as computers, printers, and servers to connect.</li>
+        <li><strong>Collision Reduction</strong><br>Each port is a separate collision domain, reducing network congestion.</li>
+        <li><strong>Full-Duplex Communication</strong><br>Supports simultaneous sending and receiving of data.</li>
+        <li><strong>High Speed</strong><br>Supports Fast Ethernet, Gigabit Ethernet, and higher speeds.</li>
+        <li><strong>VLAN Support (Managed Switches)</strong><br>Allows logical segmentation of a network for better security and management.</li>
+    </ol>
+
+    <h4>Transport Layer (OSI Model)</h4>
+    <p>The Transport layer is the fourth layer of the OSI model and is responsible for end-to-end communication between source and destination devices.</p>
+
+    <h4>Functions of the Transport Layer</h4>
+    <ol>
+        <li><strong>Segmentation and Reassembly</strong><br>Breaks large data into smaller segments and reassembles them at the destination.</li>
+        <li><strong>Flow Control</strong><br>Regulates the speed of data transmission to avoid receiver overload.</li>
+        <li><strong>Error Control</strong><br>Detects errors and ensures retransmission of lost or corrupted data.</li>
+        <li><strong>Reliability</strong><br>Ensures complete and correct data delivery using acknowledgements and sequencing.</li>
+        <li><strong>Port Addressing</strong><br>Uses port numbers to deliver data to the correct application.</li>
+        <li><strong>Connection Management</strong><br>Establishes, maintains, and terminates connections.</li>
+    </ol>
+
+    <h3>23. Briefly explain the FTP (File Transfer Protocol) and its purpose. List out the services of API and explain why we should use it.</h3>
+
+    <h4>FTP (File Transfer Protocol)</h4>
+    <p>FTP (File Transfer Protocol) is an application layer protocol used to transfer files between a client and a server over a network such as the Internet.</p>
+
+    <h4>Purpose of FTP</h4>
+    <ul>
+        <li>To upload files from a local computer to a remote server</li>
+        <li>To download files from a server to a client</li>
+        <li>To manage files on a server (create, delete, rename)</li>
+    </ul>
+
+    <h4>Key Features of FTP</h4>
+    <ul>
+        <li>Uses TCP for reliable data transfer</li>
+        <li>Operates using client–server architecture</li>
+        <li>Uses port 21 for control and port 20 for data transfer</li>
+        <li>Supports authentication using username and password</li>
+    </ul>
+
+    <h4>API (Application Programming Interface)</h4>
+    <p>An API is a set of rules and services that allows different software applications to communicate and share data with each other.</p>
+
+    <h4>Services of API</h4>
+    <ol>
+        <li><strong>Data Access Service</strong><br>Allows applications to fetch or send data (e.g., user details, product lists).</li>
+        <li><strong>Authentication Service</strong><br>Provides secure login and authorization using tokens or keys.</li>
+        <li><strong>Payment Service</strong><br>Enables online payments, billing, and transaction processing.</li>
+        <li><strong>Communication Service</strong><br>Supports email, SMS, notifications, and messaging.</li>
+        <li><strong>Integration Service</strong><br>Connects different systems such as mobile apps, web apps, and databases.</li>
+        <li><strong>Automation Service</strong><br>Automates tasks like data synchronization and report generation.</li>
+    </ol>
+
+    <h4>Why We Should Use APIs</h4>
+    <ul>
+        <li><strong>Reusability</strong> – Avoids rewriting existing functionalities</li>
+        <li><strong>Interoperability</strong> – Enables communication between different platforms</li>
+        <li><strong>Efficiency</strong> – Speeds up application development</li>
+        <li><strong>Scalability</strong> – Easily supports large and growing systems</li>
+        <li><strong>Security</strong> – Provides controlled and secure access to data</li>
+    </ul>
+
+    <h3>24. Describe any two routing algorithms and their working. Evaluate the PVR (Priority-based Vector Routing) algorithm and explain its advantages.</h3>
+
+    <h4>Routing Algorithms</h4>
+    <p>A routing algorithm determines the best path for data packets to travel from a source to a destination across a network. Routing decisions are based on metrics such as distance, cost, delay, bandwidth, or priority.</p>
+
+    <h4>1. Distance Vector Routing Algorithm</h4>
+    <p><strong>Working:</strong></p>
+    <ul>
+        <li>Each router maintains a routing table containing the distance (metric) to each destination and the next hop.</li>
+        <li>Routers periodically exchange routing tables with neighboring routers.</li>
+        <li>Based on received updates, routers recalculate the shortest path.</li>
+        <li>Common metric: hop count.</li>
+    </ul>
+    <p><strong>Example:</strong> RIP (Routing Information Protocol)</p>
+    <p><strong>Features:</strong></p>
+    <ul>
+        <li>Simple to implement</li>
+        <li>Uses periodic updates</li>
+        <li>Slower convergence and prone to routing loops</li>
+    </ul>
+
+    <h4>2. Link State Routing Algorithm</h4>
+    <p><strong>Working:</strong></p>
+    <ul>
+        <li>Each router discovers its direct neighbors and link costs.</li>
+        <li>Routers broadcast link-state information to all other routers.</li>
+        <li>Every router builds a complete network topology map.</li>
+        <li>The shortest path is calculated using Dijkstra’s algorithm.</li>
+    </ul>
+    <p><strong>Example:</strong> OSPF (Open Shortest Path First)</p>
+    <p><strong>Features:</strong></p>
+    <ul>
+        <li>Fast convergence</li>
+        <li>Loop-free routing</li>
+        <li>Higher memory and processing requirements</li>
+    </ul>
+
+    <h4>PVR (Priority-based Vector Routing) Algorithm</h4>
+    <p>PVR (Priority-based Vector Routing) is an enhanced routing algorithm that considers priority levels of data along with routing metrics to determine the best path.</p>
+
+    <h4>Working of PVR Algorithm</h4>
+    <ul>
+        <li>Each data packet is assigned a priority value (high, medium, or low).</li>
+        <li>Routers maintain routing information along with priority vectors.</li>
+        <li>During congestion, high-priority packets are routed first.</li>
+        <li>Routing decisions consider both path cost and packet priority.</li>
+        <li>Low-priority traffic may be delayed or rerouted to avoid congestion.</li>
+    </ul>
+
+    <h4>Advantages of PVR Algorithm</h4>
+    <ol>
+        <li><strong>Quality of Service (QoS) Support</strong><br>Ensures faster delivery of high-priority data such as voice and video.</li>
+        <li><strong>Efficient Traffic Management</strong><br>Reduces congestion by prioritizing critical packets.</li>
+        <li><strong>Improved Network Performance</strong><br>Optimizes bandwidth utilization.</li>
+        <li><strong>Flexibility</strong><br>Suitable for real-time and multimedia applications.</li>
+        <li><strong>Reliability</strong><br>Critical data reaches the destination with minimal delay.</li>
+    </ol>
+
+    <h3>25. Explain the benefits of APIs for networked applications. Define Cellular network and explain it's advantage and disadvantages.</h3>
+
+    <h4>Benefits of APIs for Networked Applications</h4>
+    <p>An API (Application Programming Interface) allows different software applications to communicate and exchange data over a network.</p>
+
+    <h4>Benefits of APIs</h4>
+    <ol>
+        <li><strong>Interoperability</strong><br>APIs enable different systems, platforms, and languages to work together smoothly.</li>
+        <li><strong>Faster Development</strong><br>Developers can reuse existing services instead of building everything from scratch.</li>
+        <li><strong>Scalability</strong><br>APIs allow applications to scale easily by integrating new services and users.</li>
+        <li><strong>Flexibility</strong><br>Applications can be updated or modified without affecting the entire system.</li>
+        <li><strong>Security</strong><br>APIs provide controlled access using authentication, authorization, and tokens.</li>
+        <li><strong>Automation and Integration</strong><br>APIs help automate tasks and integrate services like payments, notifications, and data sharing.</li>
+    </ol>
+
+    <h4>Cellular Network</h4>
+    <p>A cellular network is a wireless communication network in which a large geographical area is divided into small regions called cells, each served by a base station (cell tower). Mobile devices communicate with the nearest base station to access network services.</p>
+
+    <h4>Advantages of Cellular Networks</h4>
+    <ul>
+        <li>Mobility – Users can communicate while moving across large areas.</li>
+        <li>Wide Coverage – Covers vast geographical regions through interconnected cells.</li>
+        <li>Reuse of Frequencies – Frequency reuse increases capacity.</li>
+        <li>Scalability – Easy to add more cells for increased users.</li>
+    </ul>
+
+    <h4>Disadvantages of Cellular Networks</h4>
+    <ol>
+        <li><strong>High Infrastructure Cost</strong><br>Setting up and maintaining base stations is expensive.</li>
+        <li><strong>Limited Bandwidth</strong><br>Bandwidth is shared among users, which may reduce speed.</li>
+        <li><strong>Interference and Signal Loss</strong><br>Signal quality can be affected by obstacles and distance.</li>
+        <li><strong>Security Risks</strong><br>Wireless communication is more vulnerable to attacks than wired networks.</li>
+        <li><strong>Dependence on Power and Towers</strong><br>Network failure can occur during power outages or tower damage.</li>
+    </ol>
+
+    <h3>26. Explain the different types of network devices and their functions. Describe the DVR algorithm and discuss the count-to-infinity problem that can occur in it.</h3>
+
+    <h4>Types of Network Devices and Their Functions</h4>
+    <p>Network devices are hardware components used to connect, manage, and control communication within a computer network.</p>
+
+    <ol>
+        <li><strong>Hub</strong>
+            <ul>
+                <li>A basic networking device that connects multiple computers in a LAN.</li>
+                <li>Broadcasts data to all connected devices.</li>
+                <li>Operates at the Physical Layer (Layer 1).</li>
+            </ul>
+        </li>
+        <li><strong>Switch</strong>
+            <ul>
+                <li>Connects devices within a LAN and forwards data based on MAC addresses.</li>
+                <li>Reduces collisions and improves performance.</li>
+                <li>Operates at the Data Link Layer (Layer 2).</li>
+            </ul>
+        </li>
+        <li><strong>Router</strong>
+            <ul>
+                <li>Connects different networks and forwards data using IP addresses.</li>
+                <li>Determines the best path for data transmission.</li>
+                <li>Operates at the Network Layer (Layer 3).</li>
+            </ul>
+        </li>
+        <li><strong>Modem</strong>
+            <ul>
+                <li>Converts digital signals into analog and vice versa.</li>
+                <li>Used to connect a network to the Internet.</li>
+            </ul>
+        </li>
+        <li><strong>Bridge</strong>
+            <ul>
+                <li>Connects two similar networks and filters traffic using MAC addresses.</li>
+                <li>Reduces network congestion.</li>
+            </ul>
+        </li>
+        <li><strong>Gateway</strong>
+            <ul>
+                <li>Acts as an interface between different network protocols.</li>
+                <li>Used in large and heterogeneous networks.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h4>Distance Vector Routing (DVR) Algorithm</h4>
+    <p>The Distance Vector Routing (DVR) algorithm is a routing technique in which each router maintains a routing table (distance vector) containing:</p>
+    <ul>
+        <li>Destination network</li>
+        <li>Distance (metric such as hop count)</li>
+        <li>Next hop</li>
+    </ul>
+
+    <h4>Working of DVR Algorithm</h4>
+    <ul>
+        <li>Each router initially knows only its direct neighbors.</li>
+        <li>Routers periodically exchange routing tables with their neighbors.</li>
+        <li>Based on received information, routers update their routing tables.</li>
+        <li>The best route is selected using the minimum distance metric.</li>
+        <li>This process continues until all routers have consistent routing information.</li>
+    </ul>
+    <p><strong>Example:</strong> RIP (Routing Information Protocol)</p>
+
+    <h4>Count-to-Infinity Problem in DVR</h4>
+    <p>The count-to-infinity problem is a major drawback of the DVR algorithm.</p>
+    <p><strong>Explanation</strong></p>
+    <ul>
+        <li>Occurs when a network link fails.</li>
+        <li>Routers slowly increase the distance metric to a destination, believing an alternative path exists through neighboring routers.</li>
+        <li>The metric value keeps increasing until it reaches a predefined maximum value (called infinity, e.g., 16 in RIP).</li>
+        <li>During this time, routing loops and incorrect routing occur.</li>
+    </ul>
+    <p><strong>Effects</strong></p>
+    <ul>
+        <li>Slow convergence</li>
+        <li>Increased network traffic</li>
+        <li>Temporary routing loops</li>
+    </ul>
+    <p><strong>Solutions</strong></p>
+    <ul>
+        <li>Split Horizon</li>
+        <li>Poison Reverse</li>
+        <li>Hold-down Timers</li>
+    </ul>
+
+    <h3>27. Briefly explain the HTTP and HTTPS protocols and their differences. Differentiate WIFI and Cellular network.</h3>
+
+    <h4>HTTP (Hypertext Transfer Protocol)</h4>
+    <p>HTTP is an application layer protocol used for transferring web pages and data between a web browser (client) and a web server.</p>
+    <ul>
+        <li>Data is transmitted in plain text</li>
+        <li>Uses TCP port 80</li>
+        <li>Faster but not secure</li>
+        <li>Vulnerable to eavesdropping and data modification</li>
+    </ul>
+
+    <h4>HTTPS (Hypertext Transfer Protocol Secure)</h4>
+    <p>HTTPS is the secure version of HTTP that uses encryption to protect data during transmission.</p>
+    <ul>
+        <li>Uses SSL/TLS encryption</li>
+        <li>Uses TCP port 443</li>
+        <li>Ensures confidentiality, integrity, and authentication</li>
+        <li>Widely used for online banking, e-commerce, and login pages</li>
+    </ul>
+
+    <table style="width:100%; border-collapse:collapse; margin:20px 0;">
+        <thead>
+            <tr style="background-color:#f3f4f6;">
+                <th style="border:1px solid #e5e7eb; padding:12px;">Aspect</th>
+                <th style="border:1px solid #e5e7eb; padding:12px;">HTTP</th>
+                <th style="border:1px solid #e5e7eb; padding:12px;">HTTPS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Security</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Not secure</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Secure (encrypted)</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Data Format</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Plain text</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Encrypted</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Port Number</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">80</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">443</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Certificate</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Not required</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">SSL/TLS certificate required</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Usage</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Informational websites</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Banking, payments, logins</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4>Difference Between Wi-Fi and Cellular Network</h4>
+
+    <h4>Wi-Fi Network</h4>
+    <p>Wi-Fi is a wireless local area network (WLAN) technology used to connect devices within a limited area like homes, offices, or campuses.</p>
+
+    <h4>Cellular Network</h4>
+    <p>A cellular network is a wireless wide area network (WWAN) that provides mobile communication using cell towers, supporting voice, SMS, and mobile data.</p>
+
+    <table style="width:100%; border-collapse:collapse; margin:20px 0;">
+        <thead>
+            <tr style="background-color:#f3f4f6;">
+                <th style="border:1px solid #e5e7eb; padding:12px;">Aspect</th>
+                <th style="border:1px solid #e5e7eb; padding:12px;">Wi-Fi</th>
+                <th style="border:1px solid #e5e7eb; padding:12px;">Cellular Network</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Coverage Area</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Small (home/office)</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Large (city/country)</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Infrastructure</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Router / Access Point</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Cell towers</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Mobility</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Limited</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">High mobility</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Speed</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">High (short range)</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Variable (depends on network)</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Cost</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Usually free or low cost</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Requires data plan</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Examples</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Home Wi-Fi, campus Wi-Fi</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">4G, 5G mobile networks</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>28. Explain how core and edge routers operate in a network and their respective roles. What is BGP? Explain its functioning in inter-domain routing.</h3>
+
+    <h4>Core and Edge Routers</h4>
+    <p>Routers are networking devices that forward data packets between networks. Based on their position and function in a network, routers are mainly classified as core routers and edge routers.</p>
+
+    <h4>Roles of Core Routers</h4>
+    <ul>
+        <li>Forward large volumes of data at very high speed</li>
+        <li>Operate within the backbone of ISPs or large enterprise networks</li>
+        <li>Focus on fast packet switching, not security filtering</li>
+        <li>Ensure low latency and high reliability</li>
+    </ul>
+    <p>Core routers usually do not connect directly to end users.</p>
+
+    <h4>Roles of Edge Routers</h4>
+    <p>Edge routers are placed at the boundary of a network and connect internal networks to external networks, such as the Internet.</p>
+    <ul>
+        <li>Act as the entry and exit point of a network</li>
+        <li>Connect LANs to WANs or ISPs</li>
+        <li>Perform routing, filtering, NAT, and security policies</li>
+        <li>Control traffic entering and leaving the network</li>
+    </ul>
+    <p>Edge routers interact directly with end-user networks.</p>
+
+    <table style="width:100%; border-collapse:collapse; margin:20px 0;">
+        <thead>
+            <tr style="background-color:#f3f4f6;">
+                <th style="border:1px solid #e5e7eb; padding:12px;">Aspect</th>
+                <th style="border:1px solid #e5e7eb; padding:12px;">Core Router</th>
+                <th style="border:1px solid #e5e7eb; padding:12px;">Edge Router</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Location</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Network backbone</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Network boundary</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Traffic</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Very high-speed traffic</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">User and external traffic</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Security</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Minimal</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">High (filtering, NAT, firewall)</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Users</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">No direct user connection</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Directly connects user networks</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Role</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Fast packet forwarding</td>
+                <td style="border:1px solid #e5e7eb; padding:12px;">Network access and control</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4>BGP (Border Gateway Protocol)</h4>
+    <p>BGP (Border Gateway Protocol) is a path-vector routing protocol used for inter-domain routing, i.e., routing between different Autonomous Systems (AS) on the Internet.<br>It is the primary routing protocol of the Internet.</p>
+
+    <h4>How BGP Works</h4>
+    <ol>
+        <li>Each network on the Internet is identified as an Autonomous System (AS) with a unique AS number.</li>
+        <li>BGP routers establish a TCP connection (port 179) with neighboring AS routers.</li>
+        <li>Routers exchange routing information in the form of BGP update messages.</li>
+        <li>Instead of shortest path, BGP selects routes based on:
+            <ul>
+                <li>AS path length</li>
+                <li>Routing policies</li>
+                <li>Next-hop attributes</li>
+            </ul>
+        </li>
+        <li>The best path is selected and stored in the BGP routing table.</li>
+        <li>This process enables data packets to travel across multiple ISPs and networks efficiently.</li>
+    </ol>
+
+    <h3>29. Describe the Application layer of the OSI model and explain its functionality. Explain the concept of Mobile IP and discuss how it achieves mobility management.</h3>
+
+    <h4>Application Layer of the OSI Model</h4>
+    <p>The Application layer is the topmost layer (Layer 7) of the OSI model. It provides an interface between the user applications and the network, enabling end-users to access network services.</p>
+
+    <h4>Functions of the Application Layer</h4>
+    <ol>
+        <li><strong>User Interface to Network</strong><br>Allows applications such as web browsers and email clients to interact with the network.</li>
+        <li><strong>Network Services</strong><br>Provides services like file transfer, email, remote login, and web access.</li>
+        <li><strong>Protocol Support</strong><br>Supports application-specific protocols such as:
+            <ul>
+                <li>HTTP (web browsing)</li>
+                <li>FTP (file transfer)</li>
+                <li>SMTP (email sending)</li>
+                <li>DNS (name resolution)</li>
+            </ul>
+        </li>
+        <li><strong>Authentication and Authorization</strong><br>Verifies user identity and access permissions.</li>
+        <li><strong>Resource Availability</strong><br>Checks availability of network resources before communication.</li>
+    </ol>
+
+    <h4>Mobile IP</h4>
+    <p>Mobile IP is a protocol that allows a mobile device to move from one network to another while maintaining the same IP address, ensuring uninterrupted communication.</p>
+
+    <h4>Mobility Management in Mobile IP</h4>
+    <p><strong>How Mobile IP Works</strong></p>
+    <ol>
+        <li>When the mobile node is in its home network, it communicates normally.</li>
+        <li>When it moves to a foreign network, it obtains a Care-of Address (CoA).</li>
+        <li>The mobile node registers the CoA with its Home Agent.</li>
+        <li>The Home Agent intercepts packets meant for the mobile node.</li>
+        <li>Packets are tunneled from the Home Agent to the Care-of Address.</li>
+        <li>The Foreign Agent forwards packets to the mobile node.</li>
+    </ol>
+    <p><strong>Benefits of Mobility Management</strong></p>
+    <ul>
+        <li>Seamless communication while moving</li>
+        <li>No change in IP address for applications</li>
+        <li>Continuous sessions for calls and data transfer</li>
+    </ul>
+
+    <h3>30. Explain a wireless router and describe its characteristics. Describe the RIP (Routing Information Protocol) and explain how it works</h3>
+
+    <h4>Wireless Router</h4>
+    <p>A wireless router is a networking device that routes data between different networks and also provides wireless (Wi-Fi) connectivity to devices such as laptops, smartphones, and tablets. It combines the functions of a router, switch, and wireless access point in a single device.</p>
+
+    <h4>Characteristics of a Wireless Router</h4>
+    <ol>
+        <li><strong>Wireless Connectivity</strong><br>Enables devices to connect to the network using Wi-Fi without physical cables.</li>
+        <li><strong>Routing Functionality</strong><br>Routes data packets between the local network (LAN) and external networks such as the Internet.</li>
+        <li><strong>Built-in Switch</strong><br>Provides multiple Ethernet ports for wired connections.</li>
+        <li><strong>NAT (Network Address Translation)</strong><br>Allows multiple devices to share a single public IP address.</li>
+        <li><strong>Security Features</strong><br>Supports encryption methods like WPA/WPA2/WPA3 and firewall protection.</li>
+        <li><strong>DHCP Support</strong><br>Automatically assigns IP addresses to connected devices.</li>
+        <li><strong>Ease of Installation</strong><br>Commonly used in homes and small offices due to simple configuration.</li>
+    </ol>
+
+    <h4>RIP (Routing Information Protocol)</h4>
+    <p>RIP (Routing Information Protocol) is a distance vector routing protocol used to determine the best path for data packets in a network based on hop count.</p>
+
+    <h4>How RIP Works</h4>
+    <ol>
+        <li>Each router maintains a routing table containing destination networks, hop count, and next hop.</li>
+        <li>Routers exchange routing tables periodically (every 30 seconds) with neighboring routers.</li>
+        <li>RIP uses hop count as the routing metric.</li>
+        <li>The path with the least number of hops is chosen as the best route.</li>
+        <li>The maximum hop count is 15; a hop count of 16 is considered unreachable.</li>
+        <li>When a network change occurs, routers update their routing tables accordingly.</li>
+    </ol>
+
+    <h4>Features of RIP</h4>
+    <ul>
+        <li>Simple and easy to implement</li>
+        <li>Suitable for small networks</li>
+        <li>Uses distance vector algorithm</li>
+        <li>Slow convergence</li>
+        <li>Not suitable for large or complex networks</li>
+    </ul>
